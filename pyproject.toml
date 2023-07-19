@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "repl_python3_server-cloner-"
 version = "0.3"
-description = "By joaokristani version 0.3 https://discord.gg/Qvf5NUtqMg"
-authors = ["joaokristani"]
+description = "By L RMN version 0.3 https://discord.gg/WFfjrQxnfH"
+authors = ["L RMN"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
