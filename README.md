@@ -8,4 +8,4 @@ Usage is pretty simple.
 3) Get your bot's token from the bot tab of the discord developer portal (it should be fine to reset - you're only using it once, at least for now)
 4) When requested, enter it in the terminal
 5) Ignore the fact that the logging output isn't in English
-6) Clean up discord server (remove old bot roles, change dates, etc.)
+6) Clean up discord server (remove old bot roles, change dates, setup announcements channels [channel settings -> announcements channel], rename server, set server image, update emojis, etc.)
