@@ -281,7 +281,7 @@ class Clone:
     async def guild_edit(guild_to: discord.Guild, guild_from: discord.Guild):
         try:
             try:
-                icon_content = requests.get(guild_from.icon_url).content
+                icon_content = requests.get(guild_from.icon.url).content
             except requests.exceptions.RequestException:
                 print_error(
                     f"Tidak dapat mengunduh ikon dari {guild_from.name}")

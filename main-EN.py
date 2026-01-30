@@ -1,5 +1,5 @@
 from os import system
-import psutil
+#import psutil
 import os
 from pypresence import Presence
 import time
@@ -47,7 +47,16 @@ def clearall():
 {Style.RESET_ALL}{Fore.MAGENTA}{Fore.RESET}""")
 
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.members = True       # For accessing member information
+intents.guilds = True        # For accessing guild information
+intents.emojis_and_stickers = True  # For emoji cloning
+intents.integrations = True  # For integration settings
+intents.webhooks = True      # For webhook permissions
+intents.message_content = True  # If you need to read message content
+
+client = discord.Client(intents=intents)
+
 if os == "Windows":
     system("cls")
 else:
@@ -194,7 +203,7 @@ async def on_ready():
 
 
 try:
-    client.run(token, bot=False)
+    client.run(token)  # Remove the bot=False parameter
 except discord.LoginFailure:
     print(Fore.RED + "The inserted token is invalid")
     print(
